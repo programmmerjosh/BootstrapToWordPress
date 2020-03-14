@@ -106,7 +106,8 @@ button, input, .btn, a.btn {
 	border-color: #d95131;
 }
 
-.text-danger, li.text-danger a {
+.text-danger, li.text-danger a,
+.navbar-wrapper #navbarLinks ul li a {
 	color: #dd5638;
 }
 
@@ -244,7 +245,7 @@ form textarea {
 	background-color: #3e4249;
 }
 
-.navbar-collapse li.active {
+.navbar-nav li.active {
 	background-color: lightblue;
 	border-radius: 10px;
 }
@@ -676,6 +677,15 @@ footer li.signup-link a:hover {
 		background: rgba(255,255,255,0.8);
 		padding: 20px;
 	}
+
+	.navbar-nav li.active {
+		background-color: transparent;
+		font-weight: bolder;
+	}
+
+	#optin button.btn-block {
+		font-size: 0.8em;
+	}
 }
 
 @media screen and (max-width : 768px) {
@@ -687,8 +697,16 @@ footer li.signup-link a:hover {
 		margin: 0 0 10px;
 	}
 
+	#optin button.btn-block {
+		font-size: 0.55em;
+	}
+
 	#featurette iframe {
 		height: 240px;
+	}
+
+	footer .container {
+		margin: 0;
 	}
 
 	.resource {
@@ -698,6 +716,18 @@ footer li.signup-link a:hover {
 }
 
 @media screen and (max-width : 568px) {
+	#optin button.btn-block {
+		font-size: 0.8em;
+	}
+
+	#course-features .col-12 {
+		margin-bottom: 20px;
+	}
+
+	#course-features .col-12:last-child {
+		margin-bottom: 0;
+	}
+
 	#instructor .num {
 		height: 100px;
 		width: 100px;
@@ -711,5 +741,15 @@ footer li.signup-link a:hover {
 	.resource {
 		width: 100%;
 		margin-right: 0;
+	}
+}
+
+@media screen and (max-width : 310px) {
+	footer nav ul li a {
+		display: block;
+	}
+
+	footer .col-sm-5 p.pull-right {
+		float: left;
 	}
 }
